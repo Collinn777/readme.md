@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main (void) {
+
+    int x, y, soma;
+
+    printf("digite os dois numeros");
+    scanf("%d %d" , &x, &y);
+    soma = x + y;
+
+    printf("soma: %d\n", soma);
+    printf("subtracao: %d\n" , x-y);
+    printf("parte inteira x/y: %d\n" , x/y);
+    printf("parte inteira y/x: %d\n" , y/x);
+    printf("resto de x por y: %d\n" , x%y);
+    printf("resto de y por x: %d\n" , y%x);
+    printf("multiplicacao: %d\n" , x*y);
+    printf("divisao de x por y: %f\n" , x/ (float) y); //isso é uma casting
+    printf("divisao de y por x: %f" , y/ (float) x); //isso é uma casting
+    
+    return 0;
+}
