@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main (void) {
+    float n1, n2, n3, n4, media;
+
+    printf("digite o primeiro numero");
+    scanf("%f" , &n1);
+
+    printf("digite o segundo numero");
+    scanf("%f" , &n2);
+
+    printf("digite o terceiro numero");
+    scanf("%f" , &n3);
+
+    printf("digite o quarto numero");
+    scanf("%f" , &n4);
+
+    media = (n1 + n2 + n3 + n4 / 3);
+
+    printf("media: %.2f\n" , media);
+
+    return 0;
+    
+}
