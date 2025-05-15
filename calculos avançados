@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+
+#define PI_GRAUS 180
+#define PI_RAD 3.14
+
+int main(void) {
+    float ang_graus; // em graus
+    float ang_rad, cosseno;
+
+    printf("Informe o angulo: ");
+    scanf("%f", &ang_graus);
+
+    ang_rad = PI_RAD * ang_graus / PI_GRAUS;
+
+    printf("O seno de %.2f graus é %.2f\n", ang_graus, sin(ang_rad));
+    printf("O cosseno de %.2f graus é %.2f\n", ang_graus, cos(ang_rad));
+    printf("A tangente de %.2f graus é %.2f\n", ang_graus, tan(ang_rad));
+
+    cosseno = sqrt(1 - pow(sin(ang_rad), 2));
+    printf("Cosseno calculado por identidade trigonométrica de %.2f graus é %.2f\n", ang_graus, cosseno);
+
+    return 0;
+}
