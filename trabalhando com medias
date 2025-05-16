@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main (void) {
+    int t1, t2, t3; //nota dos trabalhos
+    int p1, p2, p3; //nota das provas
+    float mediatrabs; //media do trabalho
+    float mediaprovas; //media das provas
+    float mediafinal; //media finish
+
+    printf("informe as notas dos 3 trabalhos: ");
+    scanf("%d %d %d" , &t1, &t2, &t3);
+
+    printf("informe as notas das 3 provas: ");
+    scanf("%d %d %d" , &p1, &p2, &p3);
+
+    mediatrabs = (t1+t2+t3)/3.0;
+
+    mediaprovas = (p1+2*p2+3*p3)/6.0;
+
+    mediafinal = (mediatrabs+mediaprovas)/2.0;
+
+    if (mediafinal>=6){
+            printf("estudando passou com a media %.2f" , mediafinal);
+
+    }
+    else if (mediafinal=4){
+        printf("o estudando foi reporvado com a media de %.2f" , mediafinal);
+    }
+
+
+    return 0;
+}
