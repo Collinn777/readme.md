@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(void) {
+    char login_digitado[20];
+    char login_correto[20] = "collin";
+    int senha_digitada;
+    int senha_correta = 2006;
+
+    printf("Digite o seu nome de usuario: ");
+    scanf("%s", login_digitado);
+
+    printf("Digite a sua senha: ");
+    scanf("%d", &senha_digitada);
+
+    if (strcmp(login_digitado, login_correto) == 0 && senha_digitada == senha_correta) {
+        printf("Login aprovado!!\n");
+    } else {
+        printf("Nome de usuario ou senha errada.\n");
+    }
+
+    return 0;
+}
