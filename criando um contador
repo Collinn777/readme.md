@@ -1,12 +1,25 @@
 #include <stdio.h>
+#include <string.h>
+#define N 50
 int main (void) {
 
-    int n, i;
+    char str1 [N];
+    char str2 [N];
+    gets(str1);
+    gets(str2);
 
-    printf("digite o numero: ");
-    scanf("%d" , &n);
+    printf("tamanhos: %d e %d, respectivamente.\n", strlen(str1), strlen(str2));
+    printf("1ra string em minusculas: %s\n" , strlwr (str1));
+    printf("2da string em maiusculas: %s\n" , strupr(str2));
 
-    for (i=1; i<=n; i++){
-        printf("%d\n" , i);
-    }
+    if (strcmp(str1,str2) <0)
+        printf("%s ||| %s\n" , str1, str2);
+        else{
+            printf("%s ||| %s\n" , str2, str1);
+        }
+
+            printf("concatenasao %s" , strcat(str1, str2));
+        
+    return 0;
+
 }
